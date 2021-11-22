@@ -61,7 +61,6 @@ const isValidXML = (xmlString) => {
       // <<a></a> is false
       if (startTag.charAt(1) === '<') return false;
   
-  
       const startTagIndex = _xmlString.indexOf(startTag);
       const endTagIndex = _xmlString.indexOf(endTag);
       const child_XMLString = _xmlString.substring( startTagIndex + startTag.length, endTagIndex );
